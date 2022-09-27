@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { VscHome } from "react-icons/vsc"
 import {
-  AiOutlineUser,
   AiOutlineComment,
   AiOutlineFundProjectionScreen,
 } from "react-icons/ai"

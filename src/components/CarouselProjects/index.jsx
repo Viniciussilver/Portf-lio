@@ -10,7 +10,6 @@ import * as C from "./style"
 import Todo from "../../assets/Todo-list.png"
 import Calculadora from "../../assets/calculadora.png"
 import Lp from "../../assets/LP.png"
-import { useState } from "react"
 
 const InfoProjects = [
   {
