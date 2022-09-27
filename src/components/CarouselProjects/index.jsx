@@ -3,7 +3,7 @@ import React from "react"
 import { Typography } from "../../styles/styles"
 import Carousel from "react-elastic-carousel"
 import { TbExternalLink } from "react-icons/tb"
-import { BsGithub } from "react-icons/Bs"
+import { BsGithub } from "react-icons/bs"
 
 import * as C from "./style"
 
