@@ -12,7 +12,7 @@ export const Form = styled.form`
     margin-left: 0;
   }
   @media screen and (max-width:555px){
-    width: 360px;
+    width: 330px;
   }
 `
 

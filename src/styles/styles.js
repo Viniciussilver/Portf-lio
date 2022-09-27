@@ -28,6 +28,10 @@ export const Container = styled.div`
     width: 355px;
     position: relative;
     top: 2px;
+
+    @media screen and (max-width:555px){
+    width: 330px;
+  }
     
   }
   .box-textAnimation {
@@ -44,7 +48,7 @@ export const AboutMe = styled.div`
   @media screen and (max-width: 1080px){
     flex-direction: column-reverse;
     height: 100%;
-    padding-top:60px;
+    padding-top:70px;
   }
 `
 
