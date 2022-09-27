@@ -36,6 +36,7 @@ function App() {
             Olá eu sou
           </C.Typography>
           <C.Typography
+          align="center"
             primary="#a2a2ad"
             lineHeight="42px"
             width="350px"

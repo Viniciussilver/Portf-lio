@@ -25,6 +25,15 @@ export const Container = styled.div`
   .rec.rec-arrow:active {
     opacity:0.7;
   }
+
+  .figCaption {
+    width: 100%;
+    height: 55%;
+
+    @media screen and (max-width: 615px){
+      height: 45%;
+    }
+  }
 `
 
 export const BoxTitle = styled.div`
@@ -36,10 +45,10 @@ export const BoxTitle = styled.div`
 `
 
 export const ContainerItens = styled.div`
-margin: 35px 12px;
-width: 380px;
-height: 440px;
-padding: 18px;
+margin: 35px 10px;
+width: 390px;
+height: 400px;
+padding: 22px 20px;
 
   display: flex;
   flex-direction: column;
@@ -54,23 +63,31 @@ padding: 18px;
     transform: scale(1.1);
   } */
 
-  .description {
-    display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 10px;
+  
+  .title {
+    padding: 15px 20px;
+    font-weight: 400;
+    color: #ececec;
+    font-size: 22px;
+
+    @media screen and (max-width: 615px){
+      padding: 8px 10px;
+      font-weight: 400;
+    color: #ececec;
+    font-size: 16px;
+    }
   }
 
   @media screen and (max-width: 615px){
-    width:200px;
-    height: 260px;
+    width:190px;
+    height: 250px;
     padding: 10px;
   }
 `
 
 export const Image = styled.img`
  width: 100%;
- height: 50%;
+ height: 100%;
   border-radius: 23px;
   
   transition: 0.5s;
@@ -80,8 +97,14 @@ export const Image = styled.img`
 
 export const BoxLink = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  gap: 40px;
+
+  @media screen and (max-width: 615px){
+    gap: 10px;
+    padding-bottom: 9px;
+
+  }
+  
 `
 
 export const LinkSite = styled.a`
@@ -108,9 +131,9 @@ export const LinkSite = styled.a`
   }
 
   @media screen and (max-width: 615px){
-    padding: 7px;
-    font-weight: 400;
-  font-size: 13px;
+    padding: 7px 10px;
+    font-weight: 300;
+  font-size: 12px;
   }
 `
 
@@ -139,7 +162,7 @@ export const LinkGit = styled.a`
 
   @media screen and (max-width: 615px){
     padding: 7px;
-    font-weight: 400;
-  font-size: 13px;
+    font-weight: 300;
+  font-size: 12px;
   }
 `

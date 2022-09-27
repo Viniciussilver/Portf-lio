@@ -15,27 +15,21 @@ const InfoProjects = [
   {
     id: 1,
     name: "Lista de Tarefas",
-    description: "Projeto feito em react",
     image: Todo,
-    tecnologias: "Tecnologias usadas no Projeto: HTML5, CSS3, React, axios.",
     urlCode: "https://github.com/Viniciussilver/Todo_list_2.0",
     urlSite: "https://todo-list-2-0.vercel.app/",
   },
   {
     id: 2,
     name: "Landing Page",
-    description: "Pagina nike, site responsivo, tecnologias HTML5 CSS5",
     image: Lp,
-    tecnologias: "Tecnologias usadas no Projeto: HTML5, CSS3, React, axios.",
     urlCode: "https://github.com/Viniciussilver/LP_nike",
     urlSite: "https://viniciussilver.github.io/LP_nike/",
   },
   {
     id: 3,
     name: "Calculadora",
-    description: "Calculadora, tecnologias javaScript, CSS e HTML",
     image: Calculadora,
-    tecnologias: "Tecnologias usadas no Projeto: HTML5, CSS3, React, axios.",
     urlCode: "https://github.com/Viniciussilver/Calculator-JS",
     urlSite: "https://viniciussilver.github.io/Calculator-JS/calc/",
   },
@@ -69,11 +63,13 @@ const CarouselProjects = () => {
       <Carousel  breakPoints={breakPoints} style={{ width: "87%" }}>
         {InfoProjects.map((item) => (
           <C.ContainerItens key={item.id}>
+            <div className="figCaption">
             <C.Image src={item.image} />
-          <div className="description">
             <p className="title">{item.name}</p>
+            </div>
+           
+          {/* <div className="description"> */}
             {/* <Typography primary="#a2a2ad">{item.description}</Typography> */}
-            <p className="texto-tecnologias" primary="#2f585e">{item.tecnologias}</p >
 
             <C.BoxLink>
               <C.LinkSite target="_blank" href={item.urlSite}>
@@ -85,7 +81,7 @@ const CarouselProjects = () => {
                 Code
               </C.LinkGit>
             </C.BoxLink>
-            </div>
+            
           </C.ContainerItens>
         ))}
       </Carousel>

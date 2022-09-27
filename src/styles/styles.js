@@ -58,7 +58,7 @@ export const Info = styled.div`
 
   @media screen and (max-width: 1080px){
     align-items: center;
-    text-align: center;
+   
   }
 `
 
@@ -79,6 +79,7 @@ export const TextAnimation = styled.p`
   font-weight: 400;
   font-size: 22px;
   color: #01febc;
+  text-align: center;
 
   white-space: nowrap;
         overflow: hidden;
