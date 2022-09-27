@@ -10,29 +10,78 @@ import * as C from "./style"
 import Todo from "../../assets/Todo-list.png"
 import Calculadora from "../../assets/calculadora.png"
 import Lp from "../../assets/LP.png"
+import Cep from "../../assets/cep.png"
+import Codeburger from "../../assets/codeburger.png"
+import Conversor from "../../assets/conversor.png"
+import Dark from "../../assets/darkmode.png"
+import TelaInsta from "../../assets/insta.png"
+import Jokenpo from "../../assets/jokenpo.png"
+
 
 const InfoProjects = [
   {
     id: 1,
-    name: "Lista de Tarefas",
+    name: "Lista de Tarefas - React",
     image: Todo,
     urlCode: "https://github.com/Viniciussilver/Todo_list_2.0",
     urlSite: "https://todo-list-2-0.vercel.app/",
   },
   {
     id: 2,
-    name: "Landing Page",
+    name: "Landing Page - HTML CSS",
     image: Lp,
     urlCode: "https://github.com/Viniciussilver/LP_nike",
     urlSite: "https://viniciussilver.github.io/LP_nike/",
   },
   {
     id: 3,
-    name: "Calculadora",
+    name: "Calculadora - javaScript",
     image: Calculadora,
     urlCode: "https://github.com/Viniciussilver/Calculator-JS",
     urlSite: "https://viniciussilver.github.io/Calculator-JS/calc/",
   },
+  {
+  id: 4,
+  name: "Buscador de Cep - React Axios",
+  image: Cep,
+  urlCode: "https://github.com/Viniciussilver/zip-code-finder",
+  urlSite: "https://zip-code-finder-crpk.vercel.app/",
+},
+{
+  id: 5,
+  name: "Conversor de Moeda - JavaScript",
+  image: Conversor,
+  urlCode: "https://github.com/Viniciussilver/Currency-converter",
+  urlSite: "https://viniciussilver.github.io/Currency-converter/Project/",
+},
+{
+  id: 6,
+  name: "Jokenpo - React",
+  image: Jokenpo,
+  urlCode: "https://github.com/Viniciussilver/Jokenpo",
+  urlSite: "https://jokenpo-murex.vercel.app/",
+},
+{
+  id: 7,
+  name: "Modo escuro - HTML CSS",
+  image: Dark,
+  urlCode: "https://github.com/Viniciussilver/Dark_Mode",
+  urlSite: "https://viniciussilver.github.io/Dark_Mode/",
+},
+{
+  id: 8,
+  name: "Tela de login - HTML CSS",
+  image: TelaInsta,
+  urlCode: "https://github.com/Viniciussilver/instagram-login-screen",
+  urlSite: "https://viniciussilver.github.io/instagram-login-screen/project/",
+},
+{
+  id: 9,
+  name: "Em desenvolvimento :)",
+  image: Codeburger,
+  urlCode: "https://github.com/Viniciussilver/FrontEnd_codeburger",
+  urlSite: "#",
+},
 ]
 
 const CarouselProjects = () => {
@@ -74,7 +123,7 @@ const CarouselProjects = () => {
             <C.BoxLink>
               <C.LinkSite target="_blank" href={item.urlSite}>
                 <TbExternalLink />
-                Visite
+                {item.urlSite == "#" ? "Em breve" : "Visite"}
               </C.LinkSite>
               <C.LinkGit target="_blank" href={item.urlCode}>
                 <BsGithub />

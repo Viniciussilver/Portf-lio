@@ -59,8 +59,14 @@ export const BoxSkills = styled.div`
   width: 235px;
   height: 115px;
   border-radius: 3px;
+  transition: 0.4s;
 
   background-color: #2f363e;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: black;
+  }
 `
 
 export const Services = styled.div`
@@ -73,6 +79,14 @@ export const Services = styled.div`
   height: 115px;
   background-color: #2f363e;
   border-radius: 3px;
+
+  transition: 0.4s;
+
+
+&:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
 `
 
 export const IconPC = styled(RiComputerLine)`

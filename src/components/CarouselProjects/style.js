@@ -55,9 +55,11 @@ padding: 22px 20px;
   align-items: center;
   justify-content: space-between;
  
-  border-radius: 32px;
-  transition: 0.6s;
+  border-radius: 34px;
+  transition: 0.2s;
   background-color: #201f37;
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);
+
 
   /* &:hover {
     transform: scale(1.1);
@@ -65,22 +67,24 @@ padding: 22px 20px;
 
   
   .title {
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-left: 12px; 
     font-weight: 400;
     color: #ececec;
-    font-size: 22px;
+    font-size: 20px;
 
     @media screen and (max-width: 615px){
-      padding: 8px 10px;
+      padding-top: 8px;
+    padding-left: 6px; 
       font-weight: 400;
     color: #ececec;
-    font-size: 16px;
+    font-size: 14px;
     }
   }
 
   @media screen and (max-width: 615px){
     width:190px;
-    height: 250px;
+    height: 230px;
     padding: 10px;
   }
 `
@@ -88,7 +92,7 @@ padding: 22px 20px;
 export const Image = styled.img`
  width: 100%;
  height: 100%;
-  border-radius: 23px;
+  border-radius: 24px;
   
   transition: 0.5s;
 
@@ -123,6 +127,7 @@ export const LinkSite = styled.a`
   cursor: pointer;
 
   &:hover {
+  
     opacity: 0.8;
   }
 

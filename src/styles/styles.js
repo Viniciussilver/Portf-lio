@@ -18,6 +18,16 @@ export const GlobalStyles = createGlobalStyle`
     html {
       scroll-behavior: smooth;
     }
+
+    /* ::-webkit-scrollbar{
+      width: 10px;
+      background-color: #1a1c1d ;
+    }
+
+    ::-webkit-scrollbar-thumb{
+      background-color: #201f37;
+      border-radius: 4px;
+    } */
 `
 
 export const Container = styled.div`
@@ -83,7 +93,7 @@ export const TextAnimation = styled.p`
 
   white-space: nowrap;
         overflow: hidden;
-        animation: typewriter 3.5s steps(23) infinite alternate,
+        animation: typewriter 3.5s steps(22) infinite alternate,
           blink 800ms steps(13) infinite normal;
         border-right: 3.4px solid #ececec;
       
@@ -92,7 +102,7 @@ export const TextAnimation = styled.p`
           width: 0%;
         }
         to {
-          width: 98%;
+          width: 96%;
         }
       }
       @keyframes blink {
@@ -124,11 +134,8 @@ export const Footer = styled.footer`
   height: 120px;
   background-color: #201f37;
   transition: 0.9s;
-  .icon {
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+  
+  
 `
 
 export const Text = styled.p`
