@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { AiOutlineMail } from "react-icons/ai"
+import { ImWhatsapp } from 'react-icons/im'
 
 export const Form = styled.form`
   display: flex;
@@ -94,21 +95,34 @@ export const TextArea = styled.textarea`
 `
 
 export const IconEmail = styled(AiOutlineMail)`
-  width: 36px;
-  height: 36px;
+  width: 33px;
+  height: 33px;
+  color: #01febc;
+  margin-top: 6px;
+`
+export const IconWhatsapp = styled(ImWhatsapp)`
+  width: 33px;
+  height: 33px;
   color: #01febc;
   margin-top: 6px;
 `
 export const Info = styled.div`
   display: flex;
-  flex-direction: column;
+  gap: 13px;
+  
 /* 
   @media screen and (max-width:880px){
     display: none;
   } */
+
+  .informacoes-contato {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const BoxSocial = styled.div`
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 22px;
 `

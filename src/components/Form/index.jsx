@@ -22,9 +22,11 @@ const ContactForm = () => {
 
       <C.ContainerItem>
         <C.BoxSocial>
-          <C.IconEmail />
+          
           <C.Info>
-            <Typography lineHeight="31px" size="20px">
+          <C.IconEmail />
+            <div className="informacoes-contato">
+            <Typography lineHeight="34px" size="19px">
               Meu E-mail
             </Typography>
             <Typography
@@ -35,6 +37,23 @@ const ContactForm = () => {
             >
               viniciusimoes49@gmail.com
             </Typography>
+            </div>
+          </C.Info>
+          <C.Info>
+          <C.IconWhatsapp />
+            <div className="informacoes-contato">
+            <Typography lineHeight="34px" size="19px">
+              Meu numero
+            </Typography>
+            <Typography
+              lineHeight="15px"
+              size="16px"
+              fontWeight="300"
+              primary="#a2a2ad"
+            >
+              (51)980193821
+            </Typography>
+            </div>
           </C.Info>
         </C.BoxSocial>
         
