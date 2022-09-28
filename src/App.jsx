@@ -47,8 +47,8 @@ function App() {
           <div className="box-textAnimation"><C.TextAnimation>Desenvolvedor Front-End</C.TextAnimation></div>
 
           <C.Text width="130px" size="18px">
-            Bem-vindo ao meu portfólio, me chamo Vinícius, tenho 18 anos e sou
-            programador Front-End. Iniciei minha jornada na programação em junho
+            Bem-vindo ao meu portfólio, sou
+            programador Front-End. Iniciei na programação em junho
             de 2022 por meio do curso DevClub, uma formação Full-Stack. No
             momento estou focando no desenvolvimento Front-end, estudando React,
             Context Api, aprimorando minhas habilidades com javaScript e
@@ -56,7 +56,7 @@ function App() {
           </C.Text>
           <C.Div>
             <C.ButtonCv>
-              Donlowad CV <C.Download />
+              Download CV <C.Download />
             </C.ButtonCv>
             <C.LinkContact href="#formulario">
               Contate-me <C.Arrow />

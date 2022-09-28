@@ -43,7 +43,7 @@ const ContactForm = () => {
           <C.IconWhatsapp />
             <div className="informacoes-contato">
             <Typography lineHeight="34px" size="19px">
-              Meu numero
+            Meu número
             </Typography>
             <Typography
               lineHeight="15px"

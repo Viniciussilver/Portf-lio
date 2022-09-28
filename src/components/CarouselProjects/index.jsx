@@ -80,7 +80,7 @@ const InfoProjects = [
   name: "Em desenvolvimento :)",
   image: Codeburger,
   urlCode: "https://github.com/Viniciussilver/FrontEnd_codeburger",
-  urlSite: "#",
+  urlSite: false,
 },
 ]
 
@@ -123,7 +123,7 @@ const CarouselProjects = () => {
             <C.BoxLink>
               <C.LinkSite target="_blank" href={item.urlSite}>
                 <TbExternalLink />
-                {item.urlSite == "#" ? "Em breve" : "Visite"}
+                {item.urlSite ? "Visite" : "Em breve"}
               </C.LinkSite>
               <C.LinkGit target="_blank" href={item.urlCode}>
                 <BsGithub />

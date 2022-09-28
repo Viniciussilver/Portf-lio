@@ -60,11 +60,6 @@ padding: 22px 20px;
   background-color: #201f37;
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);
 
-
-  /* &:hover {
-    transform: scale(1.1);
-  } */
-
   
   .title {
     padding-top: 15px;
@@ -123,22 +118,22 @@ export const LinkSite = styled.a`
   background-color: #000;
   border-radius: 10px;
   color: #fff;
-  transition: 0.3s;
   cursor: pointer;
 
   &:hover {
+  opacity:0.8;
   
-    opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   @media screen and (max-width: 615px){
     padding: 7px 10px;
     font-weight: 300;
   font-size: 12px;
+  gap: 5px;
   }
 `
 
@@ -155,19 +150,19 @@ export const LinkGit = styled.a`
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
-  transition: 0.2s;
 
   &:hover {
-    opacity: 0.8;
+    opacity:0.8;
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   @media screen and (max-width: 615px){
     padding: 7px;
     font-weight: 300;
   font-size: 12px;
+  gap: 8px;
   }
 `
