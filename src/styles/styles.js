@@ -19,15 +19,14 @@ export const GlobalStyles = createGlobalStyle`
       scroll-behavior: smooth;
     }
 
-    /* ::-webkit-scrollbar{
+    ::-webkit-scrollbar{
       width: 10px;
-      background-color: #1a1c1d ;
+      background-color: #ececec ;
     }
 
     ::-webkit-scrollbar-thumb{
-      background-color: #201f37;
-      border-radius: 4px;
-    } */
+      background-color: #a2a2ad;
+    }
 `
 
 export const Container = styled.div`
