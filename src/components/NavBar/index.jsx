@@ -40,13 +40,15 @@ const NavBar = ({ scrollForm, scrollProjetos, scrollTecnol, scrollInicio }) => {
 
   return (
     <C.Container>
-      <C.Link1
+      <abbr title="Sobre"><C.Link1
         background={home}
         onClick={() => resetBackground(1)}
         href={scrollInicio}
       >
         <C.IconHome />
       </C.Link1>
+      </abbr>
+      <abbr title="Habilidades">
       <C.Link2
         background={tecnol}
         onClick={() => resetBackground(2)}
@@ -55,6 +57,8 @@ const NavBar = ({ scrollForm, scrollProjetos, scrollTecnol, scrollInicio }) => {
         {" "}
         <C.IconTecnologias />
       </C.Link2>
+      </abbr>
+      <abbr title="Projetos">
       <C.Link3
         background={project}
         onClick={() => resetBackground(3)}
@@ -62,6 +66,8 @@ const NavBar = ({ scrollForm, scrollProjetos, scrollTecnol, scrollInicio }) => {
       >
         <C.IconProjects />
       </C.Link3>
+      </abbr>
+      <abbr title="Contato">
       <C.Link4
         background={contact}
         onClick={() => resetBackground(4)}
@@ -69,6 +75,7 @@ const NavBar = ({ scrollForm, scrollProjetos, scrollTecnol, scrollInicio }) => {
       >
         <C.IconContact />
       </C.Link4>
+      </abbr>
     </C.Container>
   )
 }
