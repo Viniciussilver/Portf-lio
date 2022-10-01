@@ -16,7 +16,7 @@ export const Container = styled.div`
   height: 300px;
   border-radius: 32px;
   position: fixed;
-  top: 25%;
+  top: 27%;
   left: 13px;
 
   @media screen and (max-width: 1200px){

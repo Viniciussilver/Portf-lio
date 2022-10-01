@@ -51,8 +51,8 @@ export const Container = styled.div`
 export const AboutMe = styled.div`
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
 
   @media screen and (max-width: 1080px){
     flex-direction: column-reverse;
