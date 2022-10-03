@@ -16,6 +16,7 @@ import Conversor from "../../assets/conversor.png"
 import Dark from "../../assets/darkmode.png"
 import TelaInsta from "../../assets/insta.png"
 import Jokenpo from "../../assets/jokenpo.png"
+import ApiGit from "../../assets/api.png"
 
 
 const InfoProjects = [
@@ -32,6 +33,13 @@ const InfoProjects = [
     image: Lp,
     urlCode: "https://github.com/Viniciussilver/LP_nike",
     urlSite: "https://viniciussilver.github.io/LP_nike/",
+  },
+  {
+    id: 10,
+    name: "Projeto api github - React",
+    image: ApiGit,
+    urlCode: "https://github.com/Viniciussilver/projeto-api-github",
+    urlSite: "https://projeto-api-github-hyrc.vercel.app/",
   },
   {
     id: 3,
@@ -82,6 +90,7 @@ const InfoProjects = [
   urlCode: "https://github.com/Viniciussilver/FrontEnd_codeburger",
   urlSite: false,
 },
+
 ]
 
 const CarouselProjects = () => {
