@@ -88,7 +88,7 @@ const InfoProjects = [
   name: "Em desenvolvimento :)",
   image: Codeburger,
   urlCode: "https://github.com/Viniciussilver/FrontEnd_codeburger",
-  urlSite: false,
+  urlSite: null,
 },
 
 ]
