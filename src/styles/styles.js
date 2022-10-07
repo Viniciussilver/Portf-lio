@@ -44,7 +44,7 @@ export const Container = styled.div`
     
   }
   .box-textAnimation {
-    width: 275px;
+    width: 265px;
   }
 `
 
@@ -92,7 +92,7 @@ export const TextAnimation = styled.p`
 
   white-space: nowrap;
         overflow: hidden;
-        animation: typewriter 3.5s steps(22) infinite alternate,
+        animation: typewriter 4s steps(20) infinite alternate,
           blink 800ms steps(13) infinite normal;
         border-right: 3.4px solid #ececec;
       
@@ -101,7 +101,7 @@ export const TextAnimation = styled.p`
           width: 0%;
         }
         to {
-          width: 96%;
+          width: 100%;
         }
       }
       @keyframes blink {
