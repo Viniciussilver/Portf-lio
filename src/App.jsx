@@ -55,9 +55,9 @@ function App() {
             começando os estudos em typeScript.
           </C.Text>
           <C.Div>
-            <C.ButtonCv>
+            {/* <C.ButtonCv>
               Download CV <C.Download />
-            </C.ButtonCv>
+            </C.ButtonCv> */}
             <C.LinkContact href="#formulario">
               Contate-me <C.Arrow />
             </C.LinkContact>
