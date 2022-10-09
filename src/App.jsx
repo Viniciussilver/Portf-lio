@@ -48,11 +48,11 @@ function App() {
 
           <C.Text width="130px" size="18px">
             Bem-vindo ao meu portfólio, sou
-            programador Front-End. <br />Iníciei na programação em junho
+            programador Front-End. <br />Iniciei na programação em junho
             de 2022 por meio do curso DevClub, uma formação Full-Stack. No
             momento estou focando no desenvolvimento Front-end, estudando React,
             Context Api, aprimorando minhas habilidades com javaScript e
-            iníciando os estudos em typeScript.
+            começando os estudos em typeScript.
           </C.Text>
           <C.Div>
             <C.ButtonCv>
