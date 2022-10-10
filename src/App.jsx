@@ -35,15 +35,11 @@ function App() {
           >
             Olá eu sou
           </C.Typography>
-          <C.Typography
-            primary="#a2a2ad"
-            lineHeight="42px"
-            width="350px"
-            fontWeight="900"
-            size="40px"
+          <C.TextName
+            
           >
-            Vinícius Simões da Silveira
-          </C.Typography>
+            Vinícius Simões da <br /> Silveira
+          </C.TextName>
           <div className="box-textAnimation"><C.TextAnimation>Desenvolvedor Front-End</C.TextAnimation></div>
 
           <C.Text width="130px" size="18px">

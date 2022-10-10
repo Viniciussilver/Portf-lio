@@ -38,10 +38,9 @@ export const Container = styled.div`
     position: relative;
     top: 2px;
 
-    @media screen and (max-width:555px){
-    width: 330px;
-  }
-    
+    @media screen and (max-width: 555px) {
+      width: 330px;
+    }
   }
   .box-textAnimation {
     width: 265px;
@@ -54,10 +53,10 @@ export const AboutMe = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  @media screen and (max-width: 1080px){
+  @media screen and (max-width: 1080px) {
     flex-direction: column-reverse;
     height: 100%;
-    padding-top:70px;
+    padding-top: 70px;
   }
 `
 
@@ -65,9 +64,8 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1080px){
+  @media screen and (max-width: 1080px) {
     align-items: center;
-   
   }
 `
 
@@ -81,7 +79,6 @@ export const Typography = styled.p`
   padding: ${(props) => props.padding || "0"};
 `
 
-
 export const TextAnimation = styled.p`
   margin-top: 5px;
   letter-spacing: 0.2px;
@@ -91,28 +88,39 @@ export const TextAnimation = styled.p`
   text-align: center;
 
   white-space: nowrap;
-        overflow: hidden;
-        animation: typewriter 4s steps(20) infinite alternate,
-          blink 800ms steps(13) infinite normal;
-        border-right: 3.4px solid #ececec;
-      
-      @keyframes typewriter {
-        from {
-          width: 0%;
-        }
-        to {
-          width: 100%;
-        }
-      }
-      @keyframes blink {
-        from {
-          border-color: #ececec;
-        }
-        to {
-          border-color: transparent;
-        }
-}
-  
+  overflow: hidden;
+  animation: typewriter 4s steps(20) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+  border-right: 3.4px solid #ececec;
+
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: #ececec;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+`
+
+export const TextName = styled.p`
+  color: #a2a2ad;
+  line-height: 42px;
+  font-weight: 900;
+  font-size: 40px;
+
+  @media screen and (max-width: 395px) {
+    font-size: 37px;
+    text-align: center;
+  }
 `
 
 export const P = styled.p`
@@ -133,8 +141,6 @@ export const Footer = styled.footer`
   height: 120px;
   background-color: #201f37;
   transition: 0.9s;
-  
-  
 `
 
 export const Text = styled.p`
@@ -148,7 +154,7 @@ export const Text = styled.p`
   word-wrap: break-word;
   word-break: break-word;
 
-  @media screen and (max-width: 620px){
+  @media screen and (max-width: 620px) {
     width: 90%;
   }
 `
@@ -204,7 +210,7 @@ export const SocialNetwork = styled.div`
   top: 36%;
   right: 3.5%;
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `
@@ -241,7 +247,6 @@ export const LinkContact = styled.a`
   text-decoration: none;
 
   &:hover {
-   
     gap: 7px;
   }
 
