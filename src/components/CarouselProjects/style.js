@@ -64,9 +64,9 @@ padding: 22px 20px;
   .title {
     padding-top: 15px;
     padding-left: 12px; 
-    font-weight: 400;
+    font-weight: 300;
     color: #ececec;
-    font-size: 20px;
+    font-size: 19px;
 
     @media screen and (max-width: 615px){
       padding-top: 8px;
@@ -88,6 +88,8 @@ export const Image = styled.img`
  width: 100%;
  height: 100%;
   border-radius: 24px;
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);
+
   
   transition: 0.5s;
 

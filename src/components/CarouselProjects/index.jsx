@@ -17,6 +17,7 @@ import Dark from "../../assets/darkmode.png"
 import TelaInsta from "../../assets/insta.png"
 import Jokenpo from "../../assets/jokenpo.png"
 import ApiGit from "../../assets/api.png"
+import Quiz from '../../assets/quiz1.png'
 
 
 const InfoProjects = [
@@ -40,6 +41,13 @@ const InfoProjects = [
     image: ApiGit,
     urlCode: "https://github.com/Viniciussilver/projeto-api-github",
     urlSite: "https://projeto-api-github-hyrc.vercel.app/",
+  },
+  {
+    id: 11,
+    name: "Quiz sobre Programação - React",
+    image: Quiz,
+    urlCode: "https://github.com/Viniciussilver/Quiz_parte1",
+    urlSite: "https://quiz-sobre-programacao.vercel.app/",
   },
   {
     id: 3,
