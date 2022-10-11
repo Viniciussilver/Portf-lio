@@ -44,6 +44,8 @@ export const Container = styled.div`
   }
   .box-textAnimation {
     width: 265px;
+    height:30px;
+    position: relative;
   }
 `
 
@@ -85,13 +87,16 @@ export const TextAnimation = styled.p`
   font-weight: 400;
   font-size: 22px;
   color: #01febc;
+  position: absolute;
+  
   text-align: center;
-
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 4s steps(20) infinite alternate,
-    blink 800ms steps(13) infinite normal;
-  border-right: 3.4px solid #ececec;
+  overflow: hidden;
+  padding-right:2px;
+  animation: typewriter 3.4s steps(20) ,
+    blink 590ms steps(13) infinite normal;
+  border-right: 2.9px solid #ececec;
 
   @keyframes typewriter {
     from {
@@ -166,8 +171,9 @@ export const LinksFooter = styled.div`
 
 export const BordaImg = styled.div`
   border-radius: 50%;
-  border: 1px solid #ececec;
+  border: 1px solid #0f172a;
   margin: 45px 0;
+  
 `
 
 export const IconLinkedin = styled(FaLinkedin)`

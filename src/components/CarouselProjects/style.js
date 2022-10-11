@@ -59,7 +59,7 @@ padding: 22px 20px;
   transition: 0.2s;
   background-color: #201f37;
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);
-
+  /* 201f37 */
   
   .title {
     padding-top: 15px;
