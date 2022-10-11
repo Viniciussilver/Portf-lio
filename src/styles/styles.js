@@ -21,11 +21,12 @@ export const GlobalStyles = createGlobalStyle`
 
     ::-webkit-scrollbar{
       width: 10px;
-      background-color: #ececec ;
+      background-color: #1a1c1d ;
     }
 
     ::-webkit-scrollbar-thumb{
-      background-color: #a2a2ad;
+      background-color: #52525b;
+      border-radius:6px;
     }
 `
 
@@ -37,6 +38,7 @@ export const Container = styled.div`
     width: 355px;
     position: relative;
     top: 2px;
+    padding: 0 2px;
 
     @media screen and (max-width: 555px) {
       width: 330px;
@@ -171,7 +173,7 @@ export const LinksFooter = styled.div`
 
 export const BordaImg = styled.div`
   border-radius: 50%;
-  border: 1px solid #0f172a;
+  border: 1px solid #ececec;
   margin: 45px 0;
   
 `
