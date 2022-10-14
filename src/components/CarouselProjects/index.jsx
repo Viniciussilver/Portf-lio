@@ -18,9 +18,17 @@ import TelaInsta from "../../assets/insta.png"
 import Jokenpo from "../../assets/jokenpo.png"
 import ApiGit from "../../assets/api.png"
 import Quiz from '../../assets/quiz1.png'
+import Netflix from '../../assets/netflix.png'
 
 
 const InfoProjects = [
+  {
+    id: 13,
+    name: "Clone da Netflix - React ",
+    image: Netflix,
+    urlCode: "https://github.com/Viniciussilver/clone-netflix",
+    urlSite: "https://clone-netflix-nine.vercel.app/",
+  },
   {
     id: 1,
     name: "Lista de Tarefas - React",

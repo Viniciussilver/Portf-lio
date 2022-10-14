@@ -70,6 +70,7 @@ export const Info = styled.div`
 
   @media screen and (max-width: 1080px) {
     align-items: center;
+    
   }
 `
 
@@ -96,8 +97,8 @@ export const TextAnimation = styled.p`
   overflow: hidden;
   overflow: hidden;
   padding-right:2px;
-  animation: typewriter 3.4s steps(20) ,
-    blink 590ms steps(13) infinite normal;
+  animation: typewriter 3s steps(20) ,
+    blink 800ms steps(13) infinite normal;
   border-right: 2.9px solid #ececec;
 
   @keyframes typewriter {
