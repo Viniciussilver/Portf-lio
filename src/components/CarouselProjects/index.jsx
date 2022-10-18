@@ -19,6 +19,7 @@ import Jokenpo from "../../assets/jokenpo.png"
 import ApiGit from "../../assets/api.png"
 import Quiz from '../../assets/quiz1.png'
 import Netflix from '../../assets/netflix.png'
+import ControleFinanceiro from '../../assets/Cf.png'
 
 
 const InfoProjects = [
@@ -49,6 +50,13 @@ const InfoProjects = [
     image: ApiGit,
     urlCode: "https://github.com/Viniciussilver/projeto-api-github",
     urlSite: "https://projeto-api-github-hyrc.vercel.app/",
+  },
+  {
+    id: 40,
+    name: "Controle Financeiro - React",
+    image: ControleFinanceiro,
+    urlCode: "https://github.com/Viniciussilver/App-Controle-Financeiro",
+    urlSite: "https://app-controle-financeiro.vercel.app/",
   },
   {
     id: 11,
