@@ -88,7 +88,7 @@ export const TextAnimation = styled.p`
   margin-top: 5px;
   letter-spacing: 0.2px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 23px;
   color: #01febc;
   position: absolute;
   
@@ -96,10 +96,10 @@ export const TextAnimation = styled.p`
   white-space: nowrap;
   overflow: hidden;
   overflow: hidden;
-  padding-right:2px;
-  animation: typewriter 3s steps(20) ,
-    blink 800ms steps(13) infinite normal;
-  border-right: 2.9px solid #ececec;
+  padding-right:1.7px;
+  animation: typewriter 2.3s steps(20) ,
+    blink 900ms steps(14) infinite normal;
+  border-right: 2.5px solid #ececec;
 
   @keyframes typewriter {
     from {
