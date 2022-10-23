@@ -1,130 +1,112 @@
-import React from "react"
+import React from 'react'
+import Carousel from 'react-elastic-carousel'
 
-import { Typography } from "../../styles/styles"
-import Carousel from "react-elastic-carousel"
-import { TbExternalLink } from "react-icons/tb"
-import { BsGithub } from "react-icons/bs"
+import { Typography } from '../../styles/styles'
+import { TbExternalLink } from 'react-icons/tb'
+import { BsGithub } from 'react-icons/bs'
 
-import * as C from "./style"
+import * as C from './style'
 
-import Todo from "../../assets/Todo-list.png"
-import Calculadora from "../../assets/calculadora.png"
-import Lp from "../../assets/LP.png"
-import Cep from "../../assets/cep.png"
-import Codeburger from "../../assets/codeburger.png"
-import Conversor from "../../assets/conversor.png"
-import Dark from "../../assets/darkmode.png"
-import TelaInsta from "../../assets/insta.png"
-import Jokenpo from "../../assets/jokenpo.png"
-import ApiGit from "../../assets/api.png"
+import Todo from '../../assets/Todo-list.png'
+import Calculadora from '../../assets/calculadora.png'
+import Lp from '../../assets/LP.png'
+import Cep from '../../assets/cep.png'
+import Codeburger from '../../assets/codeburger.png'
+import Conversor from '../../assets/conversor.png'
+import Dark from '../../assets/darkmode.png'
+import TelaInsta from '../../assets/insta.png'
+import Jokenpo from '../../assets/jokenpo.png'
+import ApiGit from '../../assets/api.png'
 import Quiz from '../../assets/quiz1.png'
 import Netflix from '../../assets/netflix.png'
 import ControleFinanceiro from '../../assets/Cf.png'
 
-
 const InfoProjects = [
   {
-    id: 13,
-    name: "Clone da Netflix - React ",
+    name: 'Clone da página do Netflix',
     image: Netflix,
-    urlCode: "https://github.com/Viniciussilver/clone-netflix",
-    urlSite: "https://clone-netflix-nine.vercel.app/",
+    urlCode: 'https://github.com/Viniciussilver/clone-netflix',
+    urlSite: 'https://clone-netflix-nine.vercel.app/',
   },
   {
-    id: 1,
-    name: "Lista de Tarefas - React",
+    name: 'Lista de Tarefas',
     image: Todo,
-    urlCode: "https://github.com/Viniciussilver/Todo_list_2.0",
-    urlSite: "https://todo-list-2-0.vercel.app/",
+    urlCode: 'https://github.com/Viniciussilver/Todo_list_2.0',
+    urlSite: 'https://todo-list-2-0.vercel.app/',
   },
   {
-    id: 2,
-    name: "Landing Page - HTML CSS",
+    name: 'Landing Page ',
     image: Lp,
-    urlCode: "https://github.com/Viniciussilver/LP_nike",
-    urlSite: "https://viniciussilver.github.io/LP_nike/",
+    urlCode: 'https://github.com/Viniciussilver/LP_nike',
+    urlSite: 'https://viniciussilver.github.io/LP_nike/',
   },
   {
-    id: 10,
-    name: "Projeto api github - React",
+    name: 'Projeto api github',
     image: ApiGit,
-    urlCode: "https://github.com/Viniciussilver/projeto-api-github",
-    urlSite: "https://projeto-api-github-hyrc.vercel.app/",
+    urlCode: 'https://github.com/Viniciussilver/projeto-api-github',
+    urlSite: 'https://projeto-api-github-hyrc.vercel.app/',
   },
   {
-    id: 40,
-    name: "Controle Financeiro - React",
+    name: 'Controle Financeiro',
     image: ControleFinanceiro,
-    urlCode: "https://github.com/Viniciussilver/App-Controle-Financeiro",
-    urlSite: "https://app-controle-financeiro.vercel.app/",
+    urlCode: 'https://github.com/Viniciussilver/App-Controle-Financeiro',
+    urlSite: 'https://app-controle-financeiro.vercel.app/',
   },
   {
-    id: 11,
-    name: "Quiz sobre Programação - React",
+    name: 'Quiz sobre Programação',
     image: Quiz,
-    urlCode: "https://github.com/Viniciussilver/Quiz_parte1",
-    urlSite: "https://quiz-sobre-programacao.vercel.app/",
+    urlCode: 'https://github.com/Viniciussilver/Quiz_parte1',
+    urlSite: 'https://quiz-sobre-programacao.vercel.app/',
   },
   {
-    id: 3,
-    name: "Calculadora - javaScript",
+    name: 'Calculadora ',
     image: Calculadora,
-    urlCode: "https://github.com/Viniciussilver/Calculator-JS",
-    urlSite: "https://viniciussilver.github.io/Calculator-JS/calc/",
+    urlCode: 'https://github.com/Viniciussilver/Calculator-JS',
+    urlSite: 'https://viniciussilver.github.io/Calculator-JS/calc/',
   },
   {
-  id: 4,
-  name: "Buscador de Cep - React Axios",
-  image: Cep,
-  urlCode: "https://github.com/Viniciussilver/zip-code-finder",
-  urlSite: "https://zip-code-finder-crpk.vercel.app/",
-},
-{
-  id: 5,
-  name: "Conversor de Moeda - JavaScript",
-  image: Conversor,
-  urlCode: "https://github.com/Viniciussilver/Currency-converter",
-  urlSite: "https://viniciussilver.github.io/Currency-converter/Project/",
-},
-{
-  id: 6,
-  name: "Jokenpo - React",
-  image: Jokenpo,
-  urlCode: "https://github.com/Viniciussilver/Jokenpo",
-  urlSite: "https://jokenpo-murex.vercel.app/",
-},
-{
-  id: 7,
-  name: "Modo escuro - HTML CSS",
-  image: Dark,
-  urlCode: "https://github.com/Viniciussilver/Dark_Mode",
-  urlSite: "https://viniciussilver.github.io/Dark_Mode/",
-},
-{
-  id: 8,
-  name: "Tela de login - HTML CSS",
-  image: TelaInsta,
-  urlCode: "https://github.com/Viniciussilver/instagram-login-screen",
-  urlSite: "https://viniciussilver.github.io/instagram-login-screen/project/",
-},
-{
-  id: 9,
-  name: "Em desenvolvimento :)",
-  image: Codeburger,
-  urlCode: "https://github.com/Viniciussilver/FrontEnd_codeburger",
-  urlSite: null,
-},
-
+    name: 'Buscador de Cep',
+    image: Cep,
+    urlCode: 'https://github.com/Viniciussilver/zip-code-finder',
+    urlSite: 'https://zip-code-finder-crpk.vercel.app/',
+  },
+  {
+    name: 'Conversor de Moeda',
+    image: Conversor,
+    urlCode: 'https://github.com/Viniciussilver/Currency-converter',
+    urlSite: 'https://viniciussilver.github.io/Currency-converter/Project/',
+  },
+  {
+    name: 'Jokenpo ',
+    image: Jokenpo,
+    urlCode: 'https://github.com/Viniciussilver/Jokenpo',
+    urlSite: 'https://jokenpo-murex.vercel.app/',
+  },
+  {
+    name: 'Light e Dark mode',
+    image: Dark,
+    urlCode: 'https://github.com/Viniciussilver/Dark_Mode',
+    urlSite: 'https://viniciussilver.github.io/Dark_Mode/',
+  },
+  {
+    name: 'Tela de login do Instagram',
+    image: TelaInsta,
+    urlCode: 'https://github.com/Viniciussilver/instagram-login-screen',
+    urlSite: 'https://viniciussilver.github.io/instagram-login-screen/project/',
+  },
+  {
+    name: 'Em desenvolvimento :)',
+    image: Codeburger,
+    urlCode: 'https://github.com/Viniciussilver/FrontEnd_codeburger',
+    urlSite: null,
+  },
 ]
 
 const CarouselProjects = () => {
- 
-
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 900, itemsToShow: 2 },
     { width: 1200, itemsToShow: 2 },
-
   ]
 
   return (
@@ -138,32 +120,36 @@ const CarouselProjects = () => {
         >
           Portfolio
         </Typography>
-        <Typography primary="#fff" size="25px" fontWeight="500">Meus Projetos</Typography>
-
+        <Typography primary="#fff" size="25px" fontWeight="500">
+          Meus Projetos
+        </Typography>
       </C.BoxTitle>
 
-      <Carousel  breakPoints={breakPoints} style={{ width: "87%" }}>
-        {InfoProjects.map((item) => (
-          <C.ContainerItens key={item.id}>
+      <Carousel breakPoints={breakPoints} style={{ width: '87%' }}>
+        {InfoProjects.map((item, index) => (
+          <C.ContainerItens key={index}>
             <div className="figCaption">
-            <C.Image src={item.image} />
-            <p className="title">{item.name}</p>
+              <C.Image src={item.image} />
+              <p className="title">{item.name}</p>
             </div>
-           
-          {/* <div className="description"> */}
+
+            {/* <div className="description"> */}
             {/* <Typography primary="#a2a2ad">{item.description}</Typography> */}
 
             <C.BoxLink>
-              <C.LinkSite target="_blank" href={item.urlSite}>
+              <C.LinkSite
+                comingSoon={item.urlSite}
+                target="_blank"
+                href={item.urlSite}
+              >
                 <TbExternalLink />
-                {item.urlSite ? "Visite" : "Em breve"}
+                {item.urlSite ? 'Visite' : 'Em breve'}
               </C.LinkSite>
               <C.LinkGit target="_blank" href={item.urlCode}>
                 <BsGithub />
                 Code
               </C.LinkGit>
             </C.BoxLink>
-            
           </C.ContainerItens>
         ))}
       </Carousel>

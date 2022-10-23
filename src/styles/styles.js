@@ -1,10 +1,10 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from 'styled-components'
 
-import { FaLinkedin } from "react-icons/fa"
-import { BsGithub } from "react-icons/bs"
-import { MdAlternateEmail } from "react-icons/md"
-import { FiDownload } from "react-icons/fi"
-import { BsArrowRightShort } from "react-icons/bs"
+import { FaLinkedin } from 'react-icons/fa'
+import { BsGithub } from 'react-icons/bs'
+import { MdAlternateEmail } from 'react-icons/md'
+import { FiDownload } from 'react-icons/fi'
+import { BsArrowRightShort } from 'react-icons/bs'
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -34,19 +34,22 @@ export const Container = styled.div`
   background-color: #1a1c1d;
   min-height: 100vh;
   .foto {
-    border-radius: 50%;
-    width: 355px;
+    border-radius: 23%;
+    width: 340px;
     position: relative;
-    top: 2px;
+    bottom: 20px;
+    right: 20px;
     padding: 0 2px;
 
     @media screen and (max-width: 555px) {
-      width: 330px;
+      width: 310px;
+      bottom: 15px;
+      right: 15px;
     }
   }
   .box-textAnimation {
     width: 265px;
-    height:30px;
+    height: 30px;
     position: relative;
   }
 `
@@ -70,35 +73,33 @@ export const Info = styled.div`
 
   @media screen and (max-width: 1080px) {
     align-items: center;
-    
   }
 `
 
 export const Typography = styled.p`
-  font-weight: ${(props) => props.fontWeight || "500"};
-  font-size: ${(props) => props.size || "18px"};
-  line-height: ${(props) => props.lineHeight || "27px"};
-  color: ${(props) => props.primary || "#ececec"};
-  text-align: ${(props) => props.align || "none"};
-  width: ${(props) => props.width || "auto"};
-  padding: ${(props) => props.padding || "0"};
+  font-weight: ${props => props.fontWeight || '500'};
+  font-size: ${props => props.size || '18px'};
+  line-height: ${props => props.lineHeight || '27px'};
+  color: ${props => props.primary || '#ececec'};
+  text-align: ${props => props.align || 'none'};
+  width: ${props => props.width || 'auto'};
+  padding: ${props => props.padding || '0'};
 `
 
 export const TextAnimation = styled.p`
   margin-top: 5px;
-  letter-spacing: 0.2px;
-  font-weight: 400;
-  font-size: 23px;
+  letter-spacing: 0.4px;
+  font-weight: 300;
+  font-size: 22.5px;
   color: #01febc;
   position: absolute;
-  
+
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   overflow: hidden;
-  padding-right:1.7px;
-  animation: typewriter 2.3s steps(20) ,
-    blink 900ms steps(14) infinite normal;
+  padding-right: 2px;
+  animation: typewriter 2.2s steps(20), blink 800ms steps(14) infinite normal;
   border-right: 2.5px solid #ececec;
 
   @keyframes typewriter {
@@ -125,14 +126,14 @@ export const TextName = styled.p`
   font-weight: 900;
   font-size: 40px;
 
-  @media screen and (max-width: 395px) {
+  @media screen and (max-width: 450px) {
     font-size: 37px;
     text-align: center;
   }
 `
 
 export const P = styled.p`
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   color: #ececec;
   font-weight: 500;
@@ -173,10 +174,10 @@ export const LinksFooter = styled.div`
 `
 
 export const BordaImg = styled.div`
-  border-radius: 50%;
-  border: 1px solid #ececec;
+  border-radius: 23%;
+  border: 1px solid #01febc;
   margin: 45px 0;
-  
+  background: transparent;
 `
 
 export const IconLinkedin = styled(FaLinkedin)`

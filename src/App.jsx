@@ -1,21 +1,21 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
-import Foto from "./assets/Foto2.jpg"
-import * as C from "./styles/styles"
-import NavBar from "./components/NavBar/index"
-import Carousel from "./components/CarouselProjects/index"
-import ShowTecnologias from "./components/Tecnologias"
-import ContactForm from "./components/Form"
-import HeaderTelaResponsiva from "./components/NavBar-Responsivo"
+import Foto from './assets/Foto2.jpg'
+import * as C from './styles/styles'
+import NavBar from './components/NavBar/index'
+import Carousel from './components/CarouselProjects/index'
+import ShowTecnologias from './components/Tecnologias'
+import ContactForm from './components/Form'
+import HeaderTelaResponsiva from './components/NavBar-Responsivo'
 
 function App() {
   return (
     <C.Container>
-      <HeaderTelaResponsiva 
-      scrollInicio="#home"
-      scrollTecnol="#habilidades"
-      scrollProjetos="#projetos"
-      scrollForm="#formulario"
+      <HeaderTelaResponsiva
+        scrollInicio="#home"
+        scrollTecnol="#habilidades"
+        scrollProjetos="#projetos"
+        scrollForm="#formulario"
       />
       <span id="home"></span>
       <NavBar
@@ -35,25 +35,24 @@ function App() {
           >
             Olá eu sou
           </C.Typography>
-          <C.TextName
-            
-          >
+          <C.TextName>
             Vinícius Simões da <br /> Silveira
           </C.TextName>
-          <div className="box-textAnimation"><C.TextAnimation>Desenvolvedor Front-End</C.TextAnimation></div>
+          <div className="box-textAnimation">
+            <C.TextAnimation>Desenvolvedor Front-End</C.TextAnimation>
+          </div>
 
           <C.Text width="130px" size="18px">
-            Bem-vindo ao meu portfólio, sou
-            programador Front-End. <br />Iniciei na programação em junho
-            de 2022 por meio do curso DevClub, uma formação Full-Stack. No
-            momento estou focando no desenvolvimento Front-end, estudando React,
-            Context Api, aprimorando minhas habilidades com javaScript e
-            começando os estudos em typeScript.
+            Bem-vindo ao meu portfólio, sou programador Front-End. <br />
+            Iniciei na programação em junho de 2022 por meio do curso DevClub,
+            uma formação Full-Stack. No momento estou focando no desenvolvimento
+            Front-end, estudando React, Context Api, aprimorando minhas
+            habilidades com javaScript e começando os estudos em typeScript.
           </C.Text>
           <C.Div>
-            {/* <C.ButtonCv>
+            <C.ButtonCv>
               Download CV <C.Download />
-            </C.ButtonCv> */}
+            </C.ButtonCv>
             <C.LinkContact href="#formulario">
               Contate-me <C.Arrow />
             </C.LinkContact>
@@ -69,7 +68,7 @@ function App() {
               <C.IconLinkedin />
             </a>
             <a target="_blank" href="mailto:viniciusimoes49@gmail.com">
-              {" "}
+              {' '}
               <C.IconEmail />
             </a>
           </C.SocialNetwork>
@@ -106,7 +105,7 @@ function App() {
             target="_blank"
             href="mailto:viniciusimoes49@gmail.com"
           >
-            {" "}
+            {' '}
             <C.IconEmail />
           </a>
         </C.LinksFooter>

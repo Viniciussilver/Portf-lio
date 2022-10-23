@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Container = styled.div`
   margin-top: 25px;
@@ -6,31 +6,28 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-
   .rec.rec-arrow {
     background: #201f37;
-   
+
     color: #fff;
     border: none;
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
-
   }
   .rec.rec-arrow:disabled {
     border: none;
     background-color: #bebebf;
     color: #efefef;
   }
-  
 
   .rec.rec-arrow:active {
-    opacity:0.7;
+    opacity: 0.7;
   }
 
   .figCaption {
     width: 100%;
     height: 55%;
 
-    @media screen and (max-width: 615px){
+    @media screen and (max-width: 615px) {
       height: 45%;
     }
   }
@@ -45,67 +42,62 @@ export const BoxTitle = styled.div`
 `
 
 export const ContainerItens = styled.div`
-margin: 35px 10px;
-width: 390px;
-height: 400px;
-padding: 22px 20px;
+  margin: 35px 10px;
+  width: 390px;
+  height: 400px;
+  padding: 22px 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
- 
+
   border-radius: 34px;
   transition: 0.2s;
   background-color: #201f37;
-  box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
   /* 201f37 */
-  
+
   .title {
     padding-top: 15px;
-    padding-left: 12px; 
+    padding-left: 23px;
     font-weight: 300;
     color: #ececec;
-    font-size: 19px;
+    font-size: 20.3px;
 
-    @media screen and (max-width: 615px){
+    @media screen and (max-width: 615px) {
       padding-top: 8px;
-    padding-left: 6px; 
+      padding-left: 6px;
       font-weight: 400;
-    color: #ececec;
-    font-size: 14px;
+      color: #ececec;
+      font-size: 14px;
     }
   }
 
-  @media screen and (max-width: 615px){
-    width:190px;
+  @media screen and (max-width: 615px) {
+    width: 190px;
     height: 230px;
     padding: 10px;
   }
 `
 
 export const Image = styled.img`
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
   border-radius: 24px;
-  box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 
-  
   transition: 0.5s;
-
-
 `
 
 export const BoxLink = styled.div`
   display: flex;
   gap: 40px;
 
-  @media screen and (max-width: 615px){
+  @media screen and (max-width: 615px) {
     gap: 10px;
     padding-bottom: 9px;
-
   }
-  
 `
 
 export const LinkSite = styled.a`
@@ -123,19 +115,18 @@ export const LinkSite = styled.a`
   cursor: pointer;
 
   &:hover {
-  opacity:0.8;
-  
+    opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
   }
 
-  @media screen and (max-width: 615px){
-    padding: 7px 10px;
+  @media screen and (max-width: 615px) {
+    padding: ${({ comingSoon }) => (comingSoon ? '7px 10px' : '7px 6px')};
     font-weight: 300;
-  font-size: 12px;
-  gap: 5px;
+    font-size: 12px;
+    gap: 5px;
   }
 `
 
@@ -154,17 +145,17 @@ export const LinkGit = styled.a`
   cursor: pointer;
 
   &:hover {
-    opacity:0.8;
+    opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
   }
 
-  @media screen and (max-width: 615px){
+  @media screen and (max-width: 615px) {
     padding: 7px;
     font-weight: 300;
-  font-size: 12px;
-  gap: 8px;
+    font-size: 12px;
+    gap: 8px;
   }
 `

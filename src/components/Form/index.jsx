@@ -1,7 +1,7 @@
-import React from "react"
-import { Typography } from "../../styles/styles"
+import React from 'react'
+import { Typography } from '../../styles/styles'
 
-import * as C from "./style"
+import * as C from './style'
 
 const ContactForm = () => {
   return (
@@ -22,41 +22,40 @@ const ContactForm = () => {
 
       <C.ContainerItem>
         <C.BoxSocial>
-          
           <C.Info>
-          <C.IconEmail />
+            <C.IconEmail />
             <div className="informacoes-contato">
-            <Typography lineHeight="34px" size="19px">
-              Meu E-mail
-            </Typography>
-            <Typography
-              lineHeight="15px"
-              size="16px"
-              fontWeight="300"
-              primary="#a2a2ad"
-            >
-              viniciusimoes49@gmail.com
-            </Typography>
+              <Typography lineHeight="34px" size="19px">
+                Meu E-mail
+              </Typography>
+              <Typography
+                lineHeight="15px"
+                size="16px"
+                fontWeight="300"
+                primary="#a2a2ad"
+              >
+                viniciusimoes49@gmail.com
+              </Typography>
             </div>
           </C.Info>
           <C.Info>
-          <C.IconWhatsapp />
+            <C.IconWhatsapp />
             <div className="informacoes-contato">
-            <Typography lineHeight="34px" size="19px">
-            Meu número
-            </Typography>
-            <Typography
-              lineHeight="15px"
-              size="16px"
-              fontWeight="300"
-              primary="#a2a2ad"
-            >
-              (51)980193821
-            </Typography>
+              <Typography lineHeight="34px" size="19px">
+                Meu número
+              </Typography>
+              <Typography
+                lineHeight="15px"
+                size="16px"
+                fontWeight="300"
+                primary="#a2a2ad"
+              >
+                (51)980193821
+              </Typography>
             </div>
           </C.Info>
         </C.BoxSocial>
-        
+
         <C.Form
           action="https://formsubmit.co/viniciusimoes49@gmail.com"
           method="POST"
