@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Carousel from 'react-elastic-carousel'
 
 import { Typography } from '../../styles/styles'
@@ -103,11 +103,20 @@ const InfoProjects = [
 ]
 
 const CarouselProjects = () => {
+  const carousel = useRef()
+
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 900, itemsToShow: 2 },
     { width: 1200, itemsToShow: 2 },
   ]
+
+  const handleScollLeft = () => {
+    carousel.current.scrollLeft -= carousel.current.offsetWidth
+  }
+  const handleScollRight = () => {
+    carousel.current.scrollLeft += carousel.current.offsetWidth
+  }
 
   return (
     <C.Container>
@@ -125,34 +134,39 @@ const CarouselProjects = () => {
         </Typography>
       </C.BoxTitle>
 
-      <Carousel breakPoints={breakPoints} style={{ width: '87%' }}>
-        {InfoProjects.map((item, index) => (
-          <C.ContainerItens key={index}>
-            <div className="figCaption">
-              <C.Image src={item.image} />
-              <p className="title">{item.name}</p>
-            </div>
+      {/* <Carousel breakPoints={breakPoints} style={{ width: '87%' }}> */}
+      <div className="box-Row">
+        <C.IconArrow rotate="0" onClick={handleScollLeft} />
+        <div ref={carousel} className="containerRow-scroll">
+          {InfoProjects.map((item, index) => (
+            <C.ContainerItens key={index}>
+              <div className="figCaption">
+                <C.Image src={item.image} />
+                <p className="title">{item.name}</p>
+              </div>
 
-            {/* <div className="description"> */}
-            {/* <Typography primary="#a2a2ad">{item.description}</Typography> */}
+              {/* <div className="description"> */}
+              {/* <Typography primary="#a2a2ad">{item.description}</Typography> */}
 
-            <C.BoxLink>
-              <C.LinkSite
-                comingSoon={item.urlSite}
-                target="_blank"
-                href={item.urlSite}
-              >
-                <TbExternalLink />
-                {item.urlSite ? 'Visite' : 'Em breve'}
-              </C.LinkSite>
-              <C.LinkGit target="_blank" href={item.urlCode}>
-                <BsGithub />
-                Code
-              </C.LinkGit>
-            </C.BoxLink>
-          </C.ContainerItens>
-        ))}
-      </Carousel>
+              <C.BoxLink>
+                <C.LinkSite
+                  comingSoon={item.urlSite}
+                  target="_blank"
+                  href={item.urlSite}
+                >
+                  <TbExternalLink />
+                  {item.urlSite ? 'Visite' : 'Em breve'}
+                </C.LinkSite>
+                <C.LinkGit target="_blank" href={item.urlCode}>
+                  <BsGithub />
+                  Code
+                </C.LinkGit>
+              </C.BoxLink>
+            </C.ContainerItens>
+          ))}
+        </div>
+        <C.IconArrow rotate="180deg" onClick={handleScollRight} />
+      </div>
     </C.Container>
   )
 }

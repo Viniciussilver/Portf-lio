@@ -7,6 +7,7 @@ import Carousel from './components/CarouselProjects/index'
 import ShowTecnologias from './components/Tecnologias'
 import ContactForm from './components/Form'
 import HeaderTelaResponsiva from './components/NavBar-Responsivo'
+import Pdf from './assets/curriculo.pdf'
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
             habilidades com javaScript e começando os estudos em typeScript.
           </C.Text>
           <C.Div>
-            <C.ButtonCv>
+            <C.ButtonCv href={Pdf} download={Pdf} type="application/pdf">
               Download CV <C.Download />
             </C.ButtonCv>
             <C.LinkContact href="#formulario">

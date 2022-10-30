@@ -265,7 +265,7 @@ export const LinkContact = styled.a`
   }
 `
 
-export const ButtonCv = styled.button`
+export const ButtonCv = styled.a`
   font-weight: 400;
   font-size: 17px;
   color: #ececec;
@@ -273,11 +273,12 @@ export const ButtonCv = styled.button`
   align-items: center;
   justify-content: center;
   gap: 7px;
-  padding: 9.5px;
+  padding: 9px;
   background-color: green;
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.9;
