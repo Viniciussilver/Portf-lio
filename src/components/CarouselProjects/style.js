@@ -103,8 +103,8 @@ export const ContainerItens = styled.div`
   }
 
   @media screen and (max-width: 615px) {
-    width: 190px;
-    height: 230px;
+    width: 225px;
+    height: 250px;
     padding: 10px;
   }
 `

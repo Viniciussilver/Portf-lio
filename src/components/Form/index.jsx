@@ -34,7 +34,7 @@ const ContactForm = () => {
                 fontWeight="300"
                 primary="#a2a2ad"
               >
-                viniciusimoes49@gmail.com
+                viniciusimoes37@gmail.com
               </Typography>
             </div>
           </C.Info>
@@ -57,7 +57,7 @@ const ContactForm = () => {
         </C.BoxSocial>
 
         <C.Form
-          action="https://formsubmit.co/viniciusimoes49@gmail.com"
+          action="https://formsubmit.co/viniciusimoes37@gmail.com"
           method="POST"
         >
           <C.Input placeholder="Nome" type="text" name="name" required />

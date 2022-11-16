@@ -68,7 +68,7 @@ function App() {
             >
               <C.IconLinkedin />
             </a>
-            <a target="_blank" href="mailto:viniciusimoes49@gmail.com">
+            <a target="_blank" href="mailto:viniciusimoes37@gmail.com">
               {' '}
               <C.IconEmail />
             </a>
@@ -104,7 +104,7 @@ function App() {
           <a
             className="icon"
             target="_blank"
-            href="mailto:viniciusimoes49@gmail.com"
+            href="mailto:viniciusimoes37@gmail.com"
           >
             {' '}
             <C.IconEmail />
