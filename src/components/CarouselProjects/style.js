@@ -14,6 +14,10 @@ export const Container = styled.div`
     color: #fff;
     border: none;
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+
+    @media screen and (max-width: 615px) {
+      display: none;
+    }
   }
   .rec.rec-arrow:disabled {
     border: none;
@@ -23,39 +27,6 @@ export const Container = styled.div`
 
   .rec.rec-arrow:active {
     opacity: 0.7;
-  }
-
-  .figCaption {
-    width: 100%;
-    height: 55%;
-
-    @media screen and (max-width: 615px) {
-      height: 45%;
-    }
-  }
-
-  .containerRow-scroll {
-    width: 100%;
-    height: max-content;
-    display: flex;
-    gap: 14px;
-    overflow: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-  }
-  .containerRow-scroll::-webkit-scrollbar {
-    display: none;
-  }
-
-  .box-Row {
-    width: 88%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @media screen and (max-width: 615px) {
-      width: 93%;
-    }
   }
 `
 
@@ -67,59 +38,68 @@ export const BoxTitle = styled.div`
   margin-bottom: 20px;
 `
 
-export const ContainerItens = styled.div`
+export const ContainerItems = styled.div`
   margin: 35px 10px;
   width: 390px;
-  height: 400px;
+  height: 390px;
   padding: 22px 20px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  flex: none;
-
   border-radius: 34px;
   transition: 0.2s;
   background-color: #201f37;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
-  /* 201f37 */
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width: 615px) {
+      gap: 14px;
+    }
+  }
 
   .title {
-    padding-top: 15px;
     padding-left: 23px;
     font-weight: 300;
     color: #ececec;
     font-size: 20.3px;
 
     @media screen and (max-width: 615px) {
-      padding-top: 8px;
       padding-left: 6px;
       font-weight: 400;
       color: #ececec;
-      font-size: 14px;
-      margin: 35px 0px;
+      font-size: 15px;
     }
   }
 
   @media screen and (max-width: 615px) {
-    width: 225px;
-    height: 250px;
+    width: 270px;
+    height: 260px;
     padding: 10px;
   }
 `
 
 export const Image = styled.img`
   width: 100%;
-  height: 100%;
+  height: 200px;
+
   border-radius: 24px;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 
   transition: 0.5s;
+
+  @media screen and (max-width: 615px) {
+    width: 100%;
+    height: 130px;
+  }
 `
 
 export const BoxLink = styled.div`
   display: flex;
+  justify-content: center;
   gap: 40px;
 
   @media screen and (max-width: 615px) {
@@ -163,9 +143,9 @@ export const LinkSite = styled.a`
   }
 
   @media screen and (max-width: 615px) {
-    padding: ${({ comingSoon }) => (comingSoon ? '7px 10px' : '7px 6px')};
+    padding: 10px 16px;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 12.8px;
     gap: 5px;
   }
 `
@@ -193,9 +173,9 @@ export const LinkGit = styled.a`
   }
 
   @media screen and (max-width: 615px) {
-    padding: 7px;
+    padding: 10px 16px;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 12.8px;
     gap: 8px;
   }
 `

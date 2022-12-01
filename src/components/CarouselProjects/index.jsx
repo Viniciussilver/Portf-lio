@@ -1,6 +1,5 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Carousel from 'react-elastic-carousel'
-
 import { Typography } from '../../styles/styles'
 import { TbExternalLink } from 'react-icons/tb'
 import { BsGithub } from 'react-icons/bs'
@@ -103,70 +102,50 @@ const InfoProjects = [
 ]
 
 const CarouselProjects = () => {
-  const carousel = useRef()
-
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
+    { width: 600, itemsToShow: 1 },
     { width: 900, itemsToShow: 2 },
-    { width: 1200, itemsToShow: 2 },
+    { width: 1200, itemsToShow: 3 },
   ]
-
-  const handleScollLeft = () => {
-    carousel.current.scrollLeft -= carousel.current.offsetWidth
-  }
-  const handleScollRight = () => {
-    carousel.current.scrollLeft += carousel.current.offsetWidth
-  }
 
   return (
     <C.Container>
       <C.BoxTitle>
         <Typography
-          align="center"
-          size="15px"
-          fontWeight="600"
-          primary="#a2a2ad"
+          align='center'
+          size='15px'
+          fontWeight='600'
+          primary='#a2a2ad'
         >
           Portfolio
         </Typography>
-        <Typography primary="#fff" size="25px" fontWeight="500">
+        <Typography primary='#fff' size='25px' fontWeight='500'>
           Meus Projetos
         </Typography>
       </C.BoxTitle>
 
-      {/* <Carousel breakPoints={breakPoints} style={{ width: '87%' }}> */}
-      <div className="box-Row">
-        <C.IconArrow rotate="0" onClick={handleScollLeft} />
-        <div ref={carousel} className="containerRow-scroll">
-          {InfoProjects.map((item, index) => (
-            <C.ContainerItens key={index}>
-              <div className="figCaption">
-                <C.Image src={item.image} />
-                <p className="title">{item.name}</p>
-              </div>
+      <Carousel breakPoints={breakPoints} style={{ width: '87%' }}>
+        {InfoProjects.map(item => (
+          <C.ContainerItems key={item.id}>
+            <div className='description'>
+              <C.Image src={item.image} />
+              <p className='title'>{item.name}</p>
+            </div>
 
-              {/* <div className="description"> */}
-              {/* <Typography primary="#a2a2ad">{item.description}</Typography> */}
-
-              <C.BoxLink>
-                <C.LinkSite
-                  comingSoon={item.urlSite}
-                  target="_blank"
-                  href={item.urlSite}
-                >
-                  <TbExternalLink />
-                  {item.urlSite ? 'Visite' : 'Em breve'}
-                </C.LinkSite>
-                <C.LinkGit target="_blank" href={item.urlCode}>
-                  <BsGithub />
-                  Code
-                </C.LinkGit>
-              </C.BoxLink>
-            </C.ContainerItens>
-          ))}
-        </div>
-        <C.IconArrow rotate="180deg" onClick={handleScollRight} />
-      </div>
+            <C.BoxLink>
+              <C.LinkSite target='_blank' href={item.urlSite}>
+                <TbExternalLink />
+                Visite
+              </C.LinkSite>
+              <C.LinkGit target='_blank' href={item.urlCode}>
+                <BsGithub />
+                Code
+              </C.LinkGit>
+            </C.BoxLink>
+          </C.ContainerItems>
+        ))}
+      </Carousel>
     </C.Container>
   )
 }
